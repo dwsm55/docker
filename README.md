@@ -44,3 +44,9 @@ docker stop <b>sleepy_zhukovsky</b>
 
 # docker 이미지 삭제 
 docker rmi -f  <이름>
+
+# docker Hub push
+docker tag node-docker:latest <계정>/docker-example:latest
+docker images
+docker login
+docker push <계정>/docker-example:latest
