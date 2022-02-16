@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dwsm55/docker/issues"
   },
-  "homepage": "https://github.com/dwsm55/docker#readme"
+  "homepage": "https://github.com/dwsm55/docker#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
