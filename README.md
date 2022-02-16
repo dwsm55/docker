@@ -50,4 +50,10 @@ http://127.0.0.1:8080/
 docker stop <b>sleepy_zhukovsky</b>
 
 # docker 이미지 삭제 
-docker rmi -f  <이름>
+docker rmi -f  <이미지이름>
+
+# tag
+docker tag node-docker:latest <도커계정>/docker:v1
+
+# docker push
+docker push <도커계정>/docker:tagname
