@@ -6,8 +6,15 @@ docker build -f Dockerfile -t node-docker .
 
 # 이미지 확인
 docker images 
-====================================
-node-docker                                     latest         1f07c40e68f8   8 minutes ago   121MB<br>
+<table>
+    <tr>
+        <td>node-docker</td>
+        <td>latest</td>		
+        <td>1f07c40e68f8</td>
+        <td>8 minutes ago</td>          	
+        <td>121MB</td>
+    </tr>		
+</table>
 
 # docker 백그라운드 실행
 docker run -d -p 8080:8080 node-docker
@@ -43,10 +50,12 @@ http://127.0.0.1:8080/
 docker stop <b>sleepy_zhukovsky</b>
 
 # docker 이미지 삭제 
-docker rmi -f  <이름>
 
-# docker Hub push
-docker tag node-docker:latest <계정>/docker-example:latest
-docker images
+docker rmi -f  <이미지이름>
+
+# tag
+docker tag node-docker:latest <도커계정>/docker:v1
+
+# docker push
 docker login
-docker push <계정>/docker-example:latest
+docker push <도커계정>/docker:v1
