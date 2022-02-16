@@ -6,8 +6,15 @@ docker build -f Dockerfile -t node-docker .
 
 # 이미지 확인
 docker images 
-====================================
-node-docker                                     latest         1f07c40e68f8   8 minutes ago   121MB<br>
+<table>
+    <tr>
+        <td>node-docker</td>
+        <td>latest</td>		
+        <td>1f07c40e68f8</td>
+        <td>8 minutes ago</td>          	
+        <td>121MB</td>
+    </tr>		
+</table>
 
 # docker 백그라운드 실행
 docker run -d -p 8080:8080 node-docker
