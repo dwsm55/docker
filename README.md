@@ -14,15 +14,14 @@ docker run -d -p 8080:8080 node-docker
 
 # docker 실행 확인
 docker ps
-====================================
 CONTAINER ID   IMAGE         COMMAND           CREATED         STATUS          PORTS                                       NAMES<br>
-e0b86e45ee21   node-docker   "node index.js"   2 minutes ago   Up 23 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   sleepy_zhukovsky
+e0b86e45ee21   node-docker   "node index.js"   2 minutes ago   Up 23 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   <b>sleepy_zhukovsky</b>
 
 # 동작 확인
 http://127.0.0.1:8080/
 
 # docker 실행 중지
-docker stop sleepy_zhukovsky
+docker stop <b>sleepy_zhukovsky</b>
 
 # docker 이미지 삭제 
 docker rmi -f  <이름>
